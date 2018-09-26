@@ -3,6 +3,9 @@
 environment:
 https://repl.it/
 
+Exercises:
+1. [matplotlib](matplotlib.txt)
+
 Labs and demos for Google Cloud Platform courses (http://cloud.google.com/training).
 
 ### Try out the code on Google Cloud Platform

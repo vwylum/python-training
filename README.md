@@ -1,6 +1,5 @@
 # python-training
-testing
-# training-data-analyst 
+
 
 Labs and demos for Google Cloud Platform courses (http://cloud.google.com/training).
 
@@ -44,6 +43,4 @@ https://www.coursera.org/learn/google-machine-learning
 
 
 
-### Blog posts
 
-blogs/

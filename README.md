@@ -1,5 +1,7 @@
 # python-training
 
+environment:
+https://repl.it/
 
 Labs and demos for Google Cloud Platform courses (http://cloud.google.com/training).
 

@@ -1,0 +1,16 @@
+def convertDate(date): # 106/01/02->20170102
+    if len(date) != 9:
+        print('wrong format')
+        return date
+    else:
+        
+        str1 = str(date)
+        yearstr = str1[:3]  # get year
+        realyear = str(int(yearstr) + 1911)  # chg year
+        realdate = realyear + str1[4:6] + str1[7:9]  #combine
+        return realdate
+
+
+
+converted = convertDate('106/11/11')
+print(converted)

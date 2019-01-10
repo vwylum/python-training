@@ -1,0 +1,6 @@
+f = open("test.txt","r") #opens file with name of "test.txt"
+list = []
+for line in f:
+    list.append(line)
+print(list)
+f.close()

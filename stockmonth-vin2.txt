@@ -1,0 +1,37 @@
+def convertDate(date):  #
+    str1 = str(date)
+    yearstr = str1[:3]  #
+    realyear = str(int(yearstr) + 1911)  #
+    realdate = realyear + str1[4:6] + str1[7:9]  #
+    return realdate
+
+import requests
+import json, csv
+import pandas as pd
+import os
+import matplotlib.pyplot as plt
+
+pd.options.mode.chained_assignment = None  #skip panda info reset warning
+
+filepath = 'stockmonth01.csv'
+
+if not os.path.isfile(filepath):  # if not exist, then create
+    url_twse = 'http://www.twse.com.tw/exchangeReport/STOCK_DAY?response=json&date=20170101&stockNo=2317&_=1521363562193'
+    res = requests.get(url_twse)  # return json
+    jdata = json.loads(res.text)  #json parser
+    
+    outputfile = open(filepath, 'w', newline='', encoding='utf-8')  # save to a file
+    outputwriter = csv.writer(outputfile)  # output to csv file
+    outputwriter.writerow(jdata['fields'])
+    for dataline in (jdata['data']):  #write a line
+        outputwriter.writerow(dataline)
+    outputfile.close()  #close file
+
+pdstock = pd.read_csv(filepath, encoding='utf-8')  # call pandas function to read csv
+for i in range(len(pdstock['日期'])):  # date conversion
+    pdstock['日期'][i] = convertDate(pdstock['日期'][i]) # store in df
+pdstock['日期'] = pd.to_datetime(pdstock['日期'])  #
+pdstock.plot(kind='line', figsize=(12, 6), x='日期', y=['收盤價', '最低價', '最高價'])  #繪製統計圖
+plt.savefig("test.png")
+plt.show()
+ 

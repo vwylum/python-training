@@ -1,0 +1,17 @@
+import pandas as pd
+df1 = pd.DataFrame({
+# Propagate dataframe as a dictionary object
+'Student ID': [1, 2, 3, 4],
+# add other fields
+ 'Name': ['tester1','tester2','tester3','tester4'],
+'Age':['25','26','27','28']
+})
+print(df1)
+
+
+from matplotlib import pyplot as plt
+ax = plt.subplot()
+plt.bar(range(len(df1.Name)),df1.Age)
+ax.set_xticks([0,1,2,3])
+ax.set_xticklabels(df1.Name, rotation=40)
+plt.show()

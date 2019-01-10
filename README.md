@@ -8,6 +8,8 @@ Exercises:
 2. [read a txt file](read-file.txt)
 3. [pandas with matplotlib](pandas-matplotlib.txt)
 4. [matplotlib](matplotlib.txt)
+4. [stock report](stockmonth-vin2.txt)
+
 
 Labs and demos for Google Cloud Platform courses (http://cloud.google.com/training).
 

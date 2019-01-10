@@ -4,7 +4,7 @@ environment:
 https://repl.it/
 
 Exercises:
-1. [function call for date conversion](convert-date1.txt)
+1. [function call for date conversion](convert-date.txt)
 2. [read a txt file](read-file.txt)
 3. [pandas with matplotlib](pandas-matplotlib.txt)
 4. [matplotlib](matplotlib.txt)

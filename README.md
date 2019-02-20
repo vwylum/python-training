@@ -1,7 +1,9 @@
 # python-training
 
-environment:
+Environment:
 https://repl.it/
+https://www.learnpython.org/en/
+
 
 Exercises:
 1. [function call for date conversion](convert-date.txt)

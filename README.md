@@ -4,11 +4,15 @@ The presentation ppt file:
  [Powerpoint file](Python3.pptx)
 
 
+
+
 Environment:
 
 https://repl.it/
 
 https://www.learnpython.org/en/
+
+
 
 
 Exercises:
@@ -17,6 +21,8 @@ Exercises:
 3. [pandas with matplotlib](pandas-matplotlib.txt)
 4. [matplotlib](matplotlib.txt)
 5. [stock report](stockmonth-vin2.txt)
+
+
 
 
 Labs and demos for Google Cloud Platform courses (http://cloud.google.com/training).

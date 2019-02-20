@@ -1,4 +1,8 @@
 # python-training
+The presentation ppt file:
+
+(Python3.pptx)
+
 
 Environment:
 

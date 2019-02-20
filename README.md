@@ -1,7 +1,7 @@
 # python-training
 The presentation ppt file:
 
-(Python3.pptx)
+ [Powerpoint file](Python3.pptx)
 
 
 Environment:
